@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joseph Adams</title>
+    <link rel="icon" type="image/x-icon" href="../Resources/favicon.png">
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.write('<link rel="stylesheet" type="text/css" href="' + savedTheme + '" id="stylesheet">');
+            } else {
+                document.write('<link rel="stylesheet" type="text/css" href="../CSS/light.css" id="stylesheet">');
+            }
+        })();
+    </script>
+    <script type="text/javascript" src="../JavaScript/main.js"></script>
+</head>
+<body>
+    <header>
+        <p class="logo"><b>></b>Ja</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><b>> <i>Pages</i></b></li>
+            <li class="folder"><a href="projects.html">Projects</a></li>
+            <li class="folder"><a href="about.html">About</a></li>
+            <li class="folder"><a href="contact.html">Contact</a></li>
+            <li>&nbsp;</li>
+            <li><b>> <i>Themes</i></b></li>
+            <li><a class="light-selected" onclick="setStyleSheet('../CSS/light.css')" href="#">light.exe</a></li>
+            <li><a class="dark-selected" onclick="setStyleSheet('../CSS/dark.css')" href="#">dark.exe</a></li>
+            <li><a class="hacker-selected" onclick="setStyleSheet('../CSS/hacker.css')" href="#">hacker.exe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="title-container">
+            <div class="title">Joseph Adams</div>
+            <div class="subtitle">Software Developer</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Joseph Adams. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joseph Adams</title>
+    <link rel="icon" type="image/x-icon" href="../Resources/favicon.png">
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.write('<link rel="stylesheet" type="text/css" href="' + savedTheme + '" id="stylesheet">');
+            } else {
+                document.write('<link rel="stylesheet" type="text/css" href="../CSS/light.css" id="stylesheet">');
+            }
+        })();
+    </script>
+    <script type="text/javascript" src="../JavaScript/main.js"></script>
+</head>
+<body>
+    <header>
+        <p class="logo"><b>></b>Ja</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><b>> <i>Pages</i></b></li>
+            <li class="folder"><a href="projects.html">Projects</a></li>
+            <li class="folder current"><a href="index.html">About</a></li>
+            <li class="folder"><a href="contact.html">Contact</a></li>
+            <li>&nbsp;</li>
+            <li><b>> <i>Themes</i></b></li>
+            <li><a class="light-selected" onclick="setStyleSheet('../CSS/light.css')" href="#">light.exe</a></li>
+            <li><a class="dark-selected" onclick="setStyleSheet('../CSS/dark.css')" href="#">dark.exe</a></li>
+            <li><a class="hacker-selected" onclick="setStyleSheet('../CSS/hacker.css')" href="#">hacker.exe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="row">
+            <div class="column-container">
+                <h1>About Me</h1>
+                <br></br>
+                <p>Hi, I'm Joseph, and I am a student with a passion for artificial intelligence and software development. Currently, I am in my 3rd year of studying BSc Artificial Intelligence & Computer Science at The University of Edinburgh. Feel free to reach out to me about internships, or any other opportunities to collaborate.</p>
+                <br />
+                <p>I am proficient with Python, C++, C, Java, and Haskell; as well as software such as PyTorch, Linux, Git, and more.</p>
+                <div class="divider"></div>
+                <h2>Check Out My:</h2>
+                <h3>> <a href="../Resources/CV.pdf">CV</a></h3>
+                <h3>> <a href="https://github.com/Joseeeeeeeph">GitHub</a></h3>
+            </div>
+            <div class="column-container">
+                <img src="../Resources/me.jpg" alt="Picture of me near Giant's Causeway, Northern Ireland" class= "about-image">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Joseph Adams. All rights reserved.</p>
+    </footer>
+</body>
+</html>
