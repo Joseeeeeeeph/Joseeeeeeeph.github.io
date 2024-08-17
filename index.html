@@ -2,18 +2,18 @@
 <html>
 <head>
     <title>Joseph Adams</title>
-    <link rel="icon" type="image/x-icon" href="../Resources/favicon.png">
+    <link rel="icon" type="image/x-icon" href="Resources/favicon.png">
     <script>
         (function() {
             var savedTheme = localStorage.getItem('theme');
             if (savedTheme) {
                 document.write('<link rel="stylesheet" type="text/css" href="' + savedTheme + '" id="stylesheet">');
             } else {
-                document.write('<link rel="stylesheet" type="text/css" href="../CSS/light.css" id="stylesheet">');
+                document.write('<link rel="stylesheet" type="text/css" href="CSS/light.css" id="stylesheet">');
             }
         })();
     </script>
-    <script type="text/javascript" src="../JavaScript/main.js"></script>
+    <script type="text/javascript" src="JavaScript/main.js"></script>
 </head>
 <body>
     <header>
@@ -28,9 +28,9 @@
             <li class="folder"><a href="HTML/contact.html">Contact</a></li>
             <li>&nbsp;</li>
             <li><b>> <i>Themes</i></b></li>
-            <li><a class="light-selected" onclick="setStyleSheet('../CSS/light.css')" href="#">light.exe</a></li>
-            <li><a class="dark-selected" onclick="setStyleSheet('../CSS/dark.css')" href="#">dark.exe</a></li>
-            <li><a class="hacker-selected" onclick="setStyleSheet('../CSS/hacker.css')" href="#">hacker.exe</a></li>
+            <li><a class="light-selected" onclick="setStyleSheet('CSS/light.css')" href="#">light.exe</a></li>
+            <li><a class="dark-selected" onclick="setStyleSheet('CSS/dark.css')" href="#">dark.exe</a></li>
+            <li><a class="hacker-selected" onclick="setStyleSheet('CSS/hacker.css')" href="#">hacker.exe</a></li>
         </ul>
     </nav>
 
