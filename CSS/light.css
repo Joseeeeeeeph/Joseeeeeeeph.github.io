@@ -221,6 +221,7 @@ li.current:hover::after {
 
     nav {
         display: none;
+        position: fixed;
         height: 100%;
         width: 160px;
         padding-top: 0px;
