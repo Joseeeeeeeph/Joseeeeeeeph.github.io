@@ -1,6 +1,7 @@
 body, p, h1, h2, h3, header, main,
 footer, nav, a, li, ul, img {
     transition: all 0.5s;
+    overflow-y: hidden;
 }
 
 body, h1, p {
@@ -223,7 +224,8 @@ li.current:hover::after {
         height: 100%;
         width: 160px;
         padding-top: 0px;
-        margin-top: 61px;
+        margin-top: 58px;
+        margin-bottom: 58px;
         background-color: #000000;
     }
 
