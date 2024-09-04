@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('toggle-nav').addEventListener('click', function () {
+        var nav = document.querySelector('nav');
+        var header = document.querySelector('header');
+        var image = document.getElementById('hamburgerbutton');
+        nav.classList.toggle('show');
+        header.classList.toggle('show');
+        if (nav.classList.contains('show')) {
+            image.src = 'Resources/buttonlight.png';
+        } else {
+            image.src = 'Resources/buttondark.png';
+        }
+    });
+});
+
 function setStyleSheet(url) {
     var stylesheet = document.getElementById('stylesheet');
     stylesheet.setAttribute('href', url);
@@ -13,14 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
     var savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         setStyleSheet(savedTheme);
-    }
-});
-
-document.getElementById('toggle-nav').addEventListener('click', function() {
-    var nav = document.querySelector('nav');
-    if (nav.style.display === 'none' || nav.style.display === '') {
-        nav.style.display = 'block';
-    } else {
-        nav.style.display = 'none';
     }
 });

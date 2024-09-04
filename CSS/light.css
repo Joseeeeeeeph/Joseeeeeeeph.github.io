@@ -10,6 +10,13 @@ body, h1, p {
     color: #000000;
 }
 
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     position: fixed;
     padding-left: 10px;
@@ -17,11 +24,11 @@ header {
     padding-bottom: 10px;
 }
 
-body {
-    background-color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+main {
+    margin-top: 88px;
+    margin-left: 160px;
+    padding: 0px 10px;
+    padding-right: 160px;
 }
 
 footer {
@@ -51,7 +58,6 @@ footer {
     flex-direction: column;
     align-items: center;
     min-height: 80vh;
-    padding-left: 20px;
 }
 
 .column-container {
@@ -110,17 +116,10 @@ footer {
     border-bottom: 1px solid #8b8982;
 }
 
-main {
-    margin-top: 88px;
-    margin-left: 160px;
-    padding: 0px 10px;
-    padding-right: 160px;
-}
-
 nav {
     height: 100%;
     width: 160px;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -197,10 +196,15 @@ li.current:hover::after {
     }
 
     header {
+        transition: none;
         padding-top: 10px;
         padding-left: 10px;
-        padding-right: 10px;
         padding-bottom: 10px;
+        width: 150px;
+    }
+
+    header.show {
+        background-color: #000000;
     }
 
     main {
@@ -216,6 +220,20 @@ li.current:hover::after {
 
     nav {
         display: none;
+        height: 100%;
+        width: 160px;
+        padding-top: 0px;
+        margin-top: 61px;
+        background-color: #000000;
+    }
+
+    nav.show {
+        display: block !important;
+        transition: all 0.5s;
+    }
+
+    nav a, ul {
+        color: #ffffff;
     }
 
     .title-container {
@@ -244,15 +262,32 @@ li.current:hover::after {
         padding-top: 0px;
         padding-bottom: 0px;
         padding-right: 0px;
-        background-color: #ffffff;
+        background-color: transparent;
         border: none;
         appearance: none;
-        transition: transform .5s ease-in-out;
+        z-index: 1;
     }
 
     .hamburger {
-        max-height: 50px;
+        max-height: 48px;
         max-width: 100%;
     }
 
+}
+
+/* Really Small Mobile: */
+@media screen and (max-width: 320px) {
+
+    .word {
+        font-size: 64px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .hamburger {
+        max-height: 32px;
+    }
+    
 }
