@@ -1,7 +1,6 @@
 body, p, h1, h2, h3, header, main,
 footer, nav, a, li, ul, img {
     transition: all 0.5s;
-    overflow-y: hidden;
 }
 
 body, h1, p {
@@ -30,6 +29,7 @@ main {
     margin-left: 160px;
     padding: 0px 10px;
     padding-right: 160px;
+    overflow-y: hidden;
 }
 
 footer {
@@ -38,6 +38,7 @@ footer {
     margin-right: 5px;
     margin-bottom: 2px;
     padding-top: 30px;
+    overflow-y: hidden;
 }
 
 .row {
@@ -200,8 +201,9 @@ li.current:hover::after {
         transition: none;
         padding-top: 10px;
         padding-left: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
         width: 150px;
+        z-index: 2;
     }
 
     header.show {
@@ -235,9 +237,15 @@ li.current:hover::after {
         transition: all 0.5s;
     }
 
-    nav a, ul {
+    nav a {
         color: #ffffff;
     }
+
+    ul {
+        color: #ffffff;
+        margin-top: 0px;
+    }
+
 
     .title-container {
         margin-top: 20px;
