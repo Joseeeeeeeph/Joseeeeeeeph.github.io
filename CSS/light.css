@@ -138,10 +138,6 @@ h1 {
     font-size: 48px;
 }
 
-h2 {
-    color: #8b8982;
-}
-
 h3 {
     color: #000000;
 }
@@ -178,8 +174,21 @@ li.folder.current::after,
     color: #40c9a2;
 }
 
+h2,
 li.current:hover a,
 li.folder.current a:hover::after,
 li.current:hover::after {
     color: #8b8982;
+}
+
+/* Mobile: */
+@media only screen and (max-width: 768px) {
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 80vh;
+        padding-left: 20px;
+        color: greenyellow;
+    }
 }
