@@ -181,14 +181,78 @@ li.current:hover::after {
     color: #8b8982;
 }
 
+.mobile {
+    display: none;
+}
+
 /* Mobile: */
 @media only screen and (max-width: 768px) {
-    .title-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 80vh;
-        padding-left: 20px;
-        color: greenyellow;
+
+    .desktop {
+        display: none;
     }
+
+    .mobile {
+        display: block;
+    }
+
+    header {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    main {
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0px 0px;
+        padding-right: 0px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .title-container {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .title {
+        display: grid;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .word {
+        font-size: 96px;
+    }
+
+    .subtitle {
+        font-size: 32px;
+    }
+
+    button {
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        background-color: #ffffff;
+        border: none;
+        appearance: none;
+        transition: transform .5s ease-in-out;
+    }
+
+    .hamburger {
+        max-height: 50px;
+        max-width: 100%;
+    }
+
 }
