@@ -1,6 +1,7 @@
 body, p, h1, h2, h3, header, main,
 footer, nav, a, li, ul, img {
     transition: all 0.5s;
+    overflow-y: hidden;
 }
 
 body, h1, p {
@@ -29,7 +30,6 @@ main {
     margin-left: 160px;
     padding: 0px 10px;
     padding-right: 160px;
-    overflow-y: hidden;
 }
 
 footer {
@@ -38,7 +38,6 @@ footer {
     margin-right: 5px;
     margin-bottom: 2px;
     padding-top: 30px;
-    overflow-y: hidden;
 }
 
 .row {
@@ -186,6 +185,45 @@ li.current:hover::after {
     display: none;
 }
 
+.single-title {
+    display: none;
+}
+
+/* Condensed Desktop/Large iPad: */
+@media screen and (max-width: 1174px) {
+
+    .double-title {
+        display: none;
+    }
+
+    .single-title {
+        display: block;
+    }
+
+    .title-container {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .title {
+        margin-top: 16vh;
+        display: grid;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .word {
+        font-size: 128px;
+    }
+
+    .subtitle {
+        font-size: 32px;
+    }
+
+}
+
 /* Mobile: */
 @media only screen and (max-width: 768px) {
 
@@ -202,7 +240,7 @@ li.current:hover::after {
         padding-top: 10px;
         padding-left: 10px;
         padding-bottom: 30px;
-        width: 150px;
+        width: calc(66% - 10px);
         z-index: 2;
     }
 
@@ -225,7 +263,7 @@ li.current:hover::after {
         display: none;
         position: fixed;
         height: 100%;
-        width: 160px;
+        width: 66%;
         padding-top: 0px;
         margin-top: 58px;
         margin-bottom: 58px;
@@ -237,27 +275,20 @@ li.current:hover::after {
         transition: all 0.5s;
     }
 
-    nav a {
-        color: #ffffff;
-    }
-
     ul {
-        color: #ffffff;
         margin-top: 0px;
     }
 
-
-    .title-container {
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        padding-left: 0px;
+    nav a, ul {
+        color: #ffffff;
+        font-size: 20px;
     }
 
-    .title {
-        display: grid;
-        text-align: center;
-        margin-bottom: 10px;
+    li.folder::after {
+        font-size: 20px;
+        position: absolute;
+        left: 100px;
+        color: #ffffff;
     }
 
     .word {
@@ -265,7 +296,7 @@ li.current:hover::after {
     }
 
     .subtitle {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     button {
@@ -299,6 +330,10 @@ li.current:hover::after {
 
     .hamburger {
         max-height: 32px;
+    }
+
+    footer {
+        margin-bottom: 30px;
     }
     
 }
