@@ -19,8 +19,15 @@
 </head>
 <body>
     <header>
-        <p class="logo"><b>></b>Ja</p>
-    </header>
+        <div class="desktop">
+            <p class="logo"><b>></b>Ja</p>
+        </div>
+        <div class="mobile">
+            <button id="toggle-nav">
+                <img id="hamburgerbutton" src="Resources/buttondark.png" alt="Nav Button" class="hamburger">
+            </button>
+        </div>
+        </header>
 
     <nav>
         <ul>
@@ -36,22 +43,38 @@
         </ul>
     </nav>
 
-    <main>
-        <div class="row">
-            <div class="column-container">
-                <h1>About Me</h1>
-                <br></br>
-                <p>Hi, I'm Joseph, and I am a student with a passion for artificial intelligence and software development. Currently, I am in my 3rd year of studying BSc Artificial Intelligence & Computer Science at The University of Edinburgh. Feel free to reach out to me about internships, or any other opportunities to collaborate.</p>
-                <br />
-                <p>I am proficient with Python, C++, C, Java, and Haskell; as well as software such as PyTorch, Linux, Git, and more.</p>
-                <div class="divider"></div>
-                <h2>Check Out My:</h2>
-                <h3>> <a href="Resources/CV.pdf">CV</a></h3>
-                <h3>> <a href="https://github.com/Joseeeeeeeph">GitHub</a></h3>
+    <main class="scroll">
+        <div class="double-title">
+            <div class="row">
+                <div class="column-container">
+                    <h1>About Me</h1>
+                    <br></br>
+                    <p>Hi, I'm Joseph, and I am a student with a passion for artificial intelligence and software development. Currently, I am in my 3rd year of studying BSc Artificial Intelligence & Computer Science at The University of Edinburgh. Feel free to reach out to me about internships, or any other opportunities to collaborate.</p>
+                    <br />
+                    <p>I am proficient with Python, C++, C, Java, and Haskell; as well as software such as PyTorch, Linux, Git, and more.</p>
+                    <div class="divider"></div>
+                    <h2>Check Out My:</h2>
+                    <h3>> <a href="Resources/CV.pdf">CV</a></h3>
+                    <h3>> <a href="https://github.com/Joseeeeeeeph">GitHub</a></h3>
+                </div>
+                <div class="column-container">
+                    <img src="Resources/me.jpg" alt="Picture of me near Giant's Causeway, Northern Ireland" class= "about-image">
+                </div>
             </div>
-            <div class="column-container">
-                <img src="Resources/me.jpg" alt="Picture of me near Giant's Causeway, Northern Ireland" class= "about-image">
-            </div>
+        </div>
+        <div class="single-title">
+            <h1>About Me</h1>
+            <br />
+            <img src="Resources/me.jpg" alt="Picture of me near Giant's Causeway, Northern Ireland" class= "about-image">
+            <br />
+            <p>Hi, I'm Joseph, and I am a student with a passion for artificial intelligence and software development. Currently, I am in my 3rd year of studying BSc Artificial Intelligence & Computer Science at The University of Edinburgh. Feel free to reach out to me about internships, or any other opportunities to collaborate.</p>
+            <br />
+            <p>I am proficient with Python, C++, C, Java, and Haskell; as well as software such as PyTorch, Linux, Git, and more.</p>
+            <div class="divider"></div>
+            <h2>Check Out My:</h2>
+            <h3>> <a href="Resources/CV.pdf">CV</a></h3>
+            <h3>> <a href="https://github.com/Joseeeeeeeph">GitHub</a></h3>
+            <br></br>
         </div>
     </main>
 

@@ -2,9 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('toggle-nav').addEventListener('click', function () {
         var nav = document.querySelector('nav');
         var header = document.querySelector('header');
+        var footer = document.querySelector('footer');
         var image = document.getElementById('hamburgerbutton');
         nav.classList.toggle('show');
         header.classList.toggle('show');
+        footer.classList.toggle('show');
         if (nav.classList.contains('show')) {
             image.src = 'Resources/buttonlight.png';
         } else {
