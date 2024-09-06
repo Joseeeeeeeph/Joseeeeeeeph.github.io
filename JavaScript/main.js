@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('toggle-nav').addEventListener('click', function () {
         var nav = document.querySelector('nav');
+        var body = document.querySelector('body');
         var header = document.querySelector('header');
         var footer = document.querySelector('footer');
         var image = document.getElementById('hamburgerbutton');
+        body.classList.toggle('show');
         nav.classList.toggle('show');
         header.classList.toggle('show');
         footer.classList.toggle('show');
