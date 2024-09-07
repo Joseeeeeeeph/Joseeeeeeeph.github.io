@@ -210,7 +210,7 @@ li.current:hover::after {
     }
 
     main {
-        padding-right: 50px;
+        padding-right: 60px;
     }
 
     footer {
@@ -221,6 +221,7 @@ li.current:hover::after {
         min-height: 0vh;
         margin-top: 20px;
         padding-left: 0px;
+        padding-right: 100px;
     }
 
     .title {
@@ -250,6 +251,7 @@ li.current:hover::after {
     }
 
     .arrow {
+        font-size: 36px;
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -374,6 +376,10 @@ li.current:hover::after {
         color: #ffffff;
     }
 
+    .title-container {
+        padding-right: 0px;
+    }
+
     .word {
         font-size: 96px;
     }
@@ -406,7 +412,6 @@ li.current:hover::after {
     }
 
     .arrow {
-        font-size: 36px;
         margin-left: 10px;
         margin-right: 10px;
     }
