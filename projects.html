@@ -19,11 +19,19 @@
 </head>
 <body>
     <header>
-        <p class="logo"><b>></b>Ja</p>
-    </header>
+        <div class="desktop">
+            <p class="logo"><b>></b>Ja</p>
+        </div>
+        <div class="mobile">
+            <button id="toggle-nav">
+                <img id="hamburgerbutton" src="Resources/buttondark.png" alt="Nav Button" class="hamburger">
+            </button>
+        </div>
+        </header>
 
     <nav>
         <ul>
+            <div class="mobile"><li>&nbsp;</li></div>
             <li><b>> <i>Pages</i></b></li>
             <li class="folder"><a href="about.html">About</a></li>
             <li class="folder current"><a href="index.html">Projects</a></li>
@@ -38,32 +46,55 @@
 
     <main>
         <h1>Personal Projects</h1>
-        <br></br>
-        <div class="row length-25vh">
-            <div class="column-container">
-                <h2>Convolution Algorithm & Image Processor</h2>
-                <p>A convolution algorithm and image processor written in C. Applies either a box blur, gaussian blur, or edge-detection.</p>
-                <h3>> <a href="https://github.com/Joseeeeeeeph/Convolution-Algorithm">GitHub Repository</a></h3>
+        <div class="desktop">
+            <br></br>
+            <div class="row length-25vh">
+                <div class="column-container">
+                    <h2>Hate Speech Detector Using Machine Learning</h2>
+                </div>
+                <div class="vertical-space"></div>
+                <div class="column-container">
+                    <div class="row length-25vh center-container">
+                        <p>[Image]</p>
+                    </div>
+                </div>
             </div>
-            <div class="column-container">
+            <div class="divider"></div>
+            <div class="row length-25vh">
+                <div class="column-container">
+                    <div class="row length-25vh center-container">
+                        <img src="Resources/covinput.png" alt="Convolution algorithm input depicting a pixel image of kirby" class="convolution-image">
+                        <div class="arrow">>>></div>
+                        <img src="Resources/covblurlight.png" alt="Convolution algorithm output depicting a pixel image of kirby that has been Gaussian blurred" class="convolution-image" id="blur">
+                        <img src="Resources/covedge.png" alt="Convolution algorithm output depicting a pixel image of kirby in which only the edges are shown" class="convolution-image">
+                    </div>
+                </div>
+                <div class="vertical-space"></div>
+                <div class="column-container">
+                    <h2>Convolution Algorithm & Image Processor</h2>
+                    <p>A convolution algorithm and image processor written in C. Applies either a box blur, gaussian blur, or edge-detection.</p>
+                    <h3>> <a href="https://github.com/Joseeeeeeeph/Convolution-Algorithm">GitHub Repository</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="mobile">
+            <br />
+                <h2>Hate Speech Detector Using Machine Learning</h2>
+                <div class="row length-25vh center-container">
+                    <p>[Image]</p>
+                </div>
+                <p class="caption">Text</p>
+                <div class="divider"></div>
+                <h2>Convolution Algorithm & Image Processor</h2>
                 <div class="row length-25vh center-container">
                     <img src="Resources/covinput.png" alt="Convolution algorithm input depicting a pixel image of kirby" class="convolution-image">
                     <div class="arrow">>>></div>
                     <img src="Resources/covblurlight.png" alt="Convolution algorithm output depicting a pixel image of kirby that has been Gaussian blurred" class="convolution-image" id="blur">
                     <img src="Resources/covedge.png" alt="Convolution algorithm output depicting a pixel image of kirby in which only the edges are shown" class="convolution-image">
                 </div>
-            </div>
+                <p class="caption">A convolution algorithm and image processor written in C. Applies either a box blur, gaussian blur, or edge-detection.</p>
+                <h3>> <a href="https://github.com/Joseeeeeeeph/Convolution-Algorithm">GitHub Repository</a></h3>
         </div>
-        <div class="divider"></div>
-        <div class="row length-25vh">
-            <div class="column-container">
-                <div class="row length-25vh center-container">
-                    <p>[Image]</p>
-                </div>
-            </div>
-            <div class="column-container">
-                <h2>Hate Speech Detector Using Machine Learning</h2>
-            </div>
     </main>
 
     <footer>

@@ -19,11 +19,19 @@
 </head>
 <body>
     <header>
-        <p class="logo"><b>></b>Ja</p>
-    </header>
+        <div class="desktop">
+            <p class="logo"><b>></b>Ja</p>
+        </div>
+        <div class="mobile">
+            <button id="toggle-nav">
+                <img id="hamburgerbutton" src="Resources/buttondark.png" alt="Nav Button" class="hamburger">
+            </button>
+        </div>
+        </header>
 
     <nav>
         <ul>
+            <div class="mobile"><li>&nbsp;</li></div>
             <li><b>> <i>Pages</i></b></li>
             <li class="folder"><a href="about.html">About</a></li>
             <li class="folder"><a href="projects.html">Projects</a></li>
@@ -38,11 +46,24 @@
 
     <main>
         <h1>Let's Get In Touch!</h1>
-        <br></br><br />
-        <h2>> Email: josephadams2@virginmedia.com</h2>
-        <h2>> Phone: +44 7874 616659</h2>
-        <h2>> LinkedIn: <a href="https://www.linkedin.com/in/joseph-adams-44976724a/">joseph-adams-44976724a</a></h2>
-        <h2>> Instagram: <a href="https://www.instagram.com/joseph.a._">joseph.a._</a></h2>
+        <div class="desktop">
+            <br></br><br />
+            <h2>> Email: josephadams2@virginmedia.com</h2>
+            <h2>> Phone: +44 7874 616659</h2>
+            <h2>> LinkedIn: <a href="https://www.linkedin.com/in/joseph-adams-44976724a/">joseph-adams-44976724a</a></h2>
+            <h2>> Instagram: <a href="https://www.instagram.com/joseph.a._">joseph.a._</a></h2>
+        </div>
+        <div class="mobile">
+            <br />
+            <h3 class="h2clone">Email:</h3>
+            <h3 class="h2clone">> josephadams2@virginmedia.com</h3>
+            <h3 class="h2clone">Phone:</h3>
+            <h3 class="h2clone">> +44 7874 616659</h3>
+            <h3 class="h2clone">LinkedIn:</h3>
+            <h3 class="h2clone">> <a href="https://www.linkedin.com/in/joseph-adams-44976724a/">joseph-adams-44976724a</a></h3>
+            <h3 class="h2clone">Instagram:</h3>
+            <h3 class="h2clone">> <a href="https://www.instagram.com/joseph.a._">joseph.a._</a></h3>
+        </div>
     </main>
 
     <footer>
