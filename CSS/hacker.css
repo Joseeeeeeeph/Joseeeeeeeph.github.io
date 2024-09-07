@@ -462,10 +462,6 @@ li.current:hover::after {
         max-height: 32px;
     }
 
-    header.show {
-        background-image: linear-gradient(to right, #ffffff calc(67% - 7px), rgba(0,0,0,0) 20%);
-    }
-
     footer {
         margin-bottom: 30px;
     }
