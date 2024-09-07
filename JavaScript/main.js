@@ -4,15 +4,18 @@ document.addEventListener('DOMContentLoaded', function () {
         var body = document.querySelector('body');
         var header = document.querySelector('header');
         var footer = document.querySelector('footer');
-        var image = document.getElementById('hamburgerbutton');
+        var light_img = document.getElementById('buttonlight');
+        var dark_img = document.getElementById('buttondark');
         body.classList.toggle('show');
         nav.classList.toggle('show');
         header.classList.toggle('show');
         footer.classList.toggle('show');
         if (nav.classList.contains('show')) {
-            image.src = 'Resources/buttonlight.png';
+            light_img.src = 'Resources/buttonlight.png';
+            dark_img.src = 'Resources/buttondark.png';
         } else {
-            image.src = 'Resources/buttondark.png';
+            light_img.src = 'Resources/buttondark.png';
+            dark_img.src = 'Resources/buttonlight.png';
         }
     });
 });
@@ -23,8 +26,10 @@ function setStyleSheet(url) {
     localStorage.setItem('theme', url);
     if (url === 'CSS/dark.css' || url === 'CSS/hacker.css') {
        document.getElementById('blur').src='Resources/covblurdark.png';
+       document.getElementById('blurmobile').src='Resources/covblurdark.png';
     } else {
         document.getElementById('blur').src='Resources/covblurlight.png';
+        document.getElementById('blurmobile').src='Resources/covblurlight.png';
     }
 }
 
