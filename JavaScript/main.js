@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
         var footer = document.querySelector('footer');
         var light_img = document.getElementById('buttonlight');
         var dark_img = document.getElementById('buttondark');
+        var border = document.getElementById('border');
         body.classList.toggle('show');
         nav.classList.toggle('show');
         header.classList.toggle('show');
         footer.classList.toggle('show');
+        border.classList.toggle('show');
         if (nav.classList.contains('show')) {
             light_img.src = 'Resources/buttonlight.png';
             dark_img.src = 'Resources/buttondark.png';

@@ -8,7 +8,7 @@ body, h1, p {
     margin: 0;
     padding: 0;
     font-family: Consolas, monospace;
-    color: #ffffff;
+    color: #00ff00;
 }
 
 body {
@@ -83,7 +83,7 @@ footer {
 .arrow {
     text-align: center;
     font-size: 48px;
-    color: #ffffff;
+    color: #00ff00;
     font-weight: bold;
     margin-top: auto;
     margin-bottom: auto;
@@ -114,7 +114,7 @@ footer {
 .divider {
     margin-top: 50px;
     margin-bottom: 50px;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #00ff00;
 }
 
 .vertical-space {
@@ -134,7 +134,7 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: #00ff00;
     font-weight: bold;
     text-decoration: none;
 }
@@ -143,14 +143,14 @@ h1 {
     font-size: 48px;
 }
 
-h3 {
-    color: #ffffff;
+a, h2, h3 {
+    color: #00ff00;
 }
 
 ul {
     list-style-type: none;
     padding: 20px;
-    color: #ffffff;
+    color: #00ff00;
 }
 
 li {
@@ -163,27 +163,29 @@ li.folder::after {
     content: "/";
     position: absolute;
     left: 75px;
-    color: #ffffff;
+    color: #00ff00;
 }
 
-a,
+a:hover,
 li:hover a,
 li.folder a:hover::after,
 li.folder:hover::after {
-    color: #4056f4;
+    color: #ffffff;
 }
 
 li.current a, 
-li.folder.current::after, 
-.dark-selected {
-    color: #40c9a2;
+li.folder.current::after,
+li.current:hover a,
+li.folder.current a:hover::after,
+li.current:hover::after,
+.hacker-selected {
+    text-decoration: underline;
 }
 
-h2,
 li.current:hover a,
 li.folder.current a:hover::after,
 li.current:hover::after {
-    color: #8b8982;
+    color: #ff0000;
 }
 
 .mobile {
@@ -269,10 +271,6 @@ li.current:hover::after {
         overflow-x: hidden;
     }
 
-    body.show {
-        background-image: linear-gradient(to right, #ffffff 67%, rgba(0,0,0,0) 20%); 
-    }
-
     .desktop {
         display: none;
     }
@@ -291,7 +289,6 @@ li.current:hover::after {
     }
 
     header.show {
-        background-image: linear-gradient(to right, #ffffff calc(67% - 5px), rgba(0,0,0,0) 20%); 
         border-bottom: 0px;
     }
 
@@ -312,10 +309,6 @@ li.current:hover::after {
         padding-left: 5px;
         padding-right: 5px;
         padding-bottom: 5px;
-    }
-
-    footer.show { 
-        background-image: linear-gradient(to right, #ffffff 67%, rgba(0,0,0,0) 20%); 
     }
 
     p {
@@ -342,7 +335,7 @@ li.current:hover::after {
     }
 
     h3.h2clone {
-        color: #8b8982;
+        color: #00ff00;
     }
 
     nav {
@@ -353,7 +346,7 @@ li.current:hover::after {
         padding-top: 0px;
         margin-top: 67px;
         margin-bottom: 58px;
-        background-color: #ffffff;
+        background-color: #000000;
     }
 
     nav.show {
@@ -365,7 +358,7 @@ li.current:hover::after {
     }
 
     nav a, ul {
-        color: #000000;
+        color: #00ff00;
         font-size: 20px;
     }
 
@@ -373,7 +366,20 @@ li.current:hover::after {
         font-size: 20px;
         position: absolute;
         left: 100px;
-        color: #000000;
+        color: #00ff00;
+    }
+
+    #border {
+        display: none;
+    }
+
+    #border.show {
+        display: block;
+        z-index: 1;
+        border-right: 1px solid #00ff00;
+        height: 100%;
+        position: fixed;
+        left: calc(67% - 1px);
     }
 
     .title-container {
@@ -431,26 +437,12 @@ li.current:hover::after {
     }
 
     .hamburgerdark {
+        display: none;
+    }
+
+    .hamburgerhacker {
         max-height: 48px;
         max-width: 100%;
-    }
-
-}
-
-/* Surface Duo and Below: */
-@media screen and (max-width: 540px) {
-
-    header.show {
-        background-image: linear-gradient(to right, #ffffff calc(67% - 6px), rgba(0,0,0,0) 20%); 
-    }
-
-}
-
-/* iPhone SE: */
-@media screen and (max-width: 375px) {
-
-    header.show {
-        background-image: linear-gradient(to right, #ffffff calc(67% - 7px), rgba(0,0,0,0) 20%); 
     }
 
 }
@@ -466,7 +458,7 @@ li.current:hover::after {
         font-size: 24px;
     }
 
-    .hamburger {
+    .hamburgerhacker {
         max-height: 32px;
     }
 

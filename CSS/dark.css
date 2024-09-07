@@ -435,6 +435,10 @@ li.current:hover::after {
         max-width: 100%;
     }
 
+    .hamburgerhacker {
+        display: none;
+    }
+
 }
 
 /* Surface Duo and Below: */
@@ -464,10 +468,6 @@ li.current:hover::after {
 
     .subtitle {
         font-size: 24px;
-    }
-
-    .hamburgerlight {
-        max-height: 32px;
     }
 
     .hamburgerdark {
