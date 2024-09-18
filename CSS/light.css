@@ -493,15 +493,6 @@ li.current:hover::after {
 
 }
 
-/* iPhone SE: */
-@media screen and (max-width: 375px) {
-
-    header.show {
-        background-image: linear-gradient(to right, #000000 calc(67% - 7px), rgba(0,0,0,0) 20%); 
-    }
-
-}
-
 /* Really Small Mobile (my phone): */
 @media screen and (max-width: 320px) {
 
