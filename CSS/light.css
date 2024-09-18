@@ -49,9 +49,9 @@ footer {
     justify-content: center;
 }
 
-.length-25vh {
-    min-height: 25vh;
-    max-height: 25vh;
+.length-30vh {
+    min-height: 30vh;
+    max-height: 30vh;
 }
 
 .title-container {
@@ -63,6 +63,10 @@ footer {
 
 .column-container {
     flex: 50%;
+}
+
+.align-right {
+    text-align: right;
 }
 
 .title {
@@ -89,6 +93,15 @@ footer {
     margin-bottom: auto;
     margin-left: 35px;
     margin-right: 35px;
+}
+
+.model-image {
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    max-height: 30vh;
+    max-width: 100%;
 }
 
 .convolution-image {
@@ -348,7 +361,7 @@ li.current:hover::after {
         height: 100%;
         width: 67%;
         padding-top: 0px;
-        margin-top: 67px;
+        margin-top: 64px;
         margin-bottom: 58px;
         background-color: #000000;
     }
@@ -431,6 +444,17 @@ li.current:hover::after {
         display: none;
     }
 
+    .length-30vh {
+        padding-top: 15px;
+        min-height: 25vh;
+        max-height: 25vh;
+        padding-bottom: 15px;
+    }
+
+    .model-image {
+        max-height: 23vh;
+    }
+
 }
 
 /* Surface Duo and Below: */
@@ -438,6 +462,33 @@ li.current:hover::after {
 
     header.show {
         background-image: linear-gradient(to right, #000000 calc(67% - 6px), rgba(0,0,0,0) 20%); 
+    }
+
+}
+
+/* iPhone 14 Pro Max: */
+@media screen and (max-width: 430px) {
+
+    header.show {
+        background-image: linear-gradient(to right, #000000 calc(67% - 7px), rgba(0,0,0,0) 20%); 
+    }
+
+}
+
+/* iPhone XR: */
+@media screen and (max-width: 414px) {
+
+    header.show {
+        background-image: linear-gradient(to right, #000000 calc(67% - 6px), rgba(0,0,0,0) 20%); 
+    }
+
+}
+
+/* iPhone 12 Pro: */
+@media screen and (max-width: 390px) {
+
+    header.show {
+        background-image: linear-gradient(to right, #000000 calc(67% - 7px), rgba(0,0,0,0) 20%); 
     }
 
 }

@@ -49,9 +49,9 @@ footer {
     justify-content: center;
 }
 
-.length-25vh {
-    min-height: 25vh;
-    max-height: 25vh;
+.length-30vh {
+    min-height: 30vh;
+    max-height: 30vh;
 }
 
 .title-container {
@@ -63,6 +63,10 @@ footer {
 
 .column-container {
     flex: 50%;
+}
+
+.align-right {
+    text-align: right;
 }
 
 .title {
@@ -89,6 +93,15 @@ footer {
     margin-bottom: auto;
     margin-left: 35px;
     margin-right: 35px;
+}
+
+.model-image {
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    max-height: 30vh;
+    max-width: 100%;
 }
 
 .convolution-image {
@@ -341,7 +354,7 @@ li.current:hover::after {
         height: 100%;
         width: 67%;
         padding-top: 0px;
-        margin-top: 67px;
+        margin-top: 64px;
         margin-bottom: 58px;
         background-color: #000000;
     }
@@ -434,6 +447,17 @@ li.current:hover::after {
     .hamburgerhacker {
         max-height: 48px;
         max-width: 100%;
+    }
+
+    .length-30vh {
+        padding-top: 15px;
+        min-height: 25vh;
+        max-height: 25vh;
+        padding-bottom: 15px;
+    }
+
+    .model-image {
+        max-height: 23vh;
     }
 
 }
